@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="50dp"
+    android:alpha="10"
+    android:background="@android:color/white"
+    >
+
+    <TextView
+        android:id="@+id/downloadHintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:text="@string/download_hint_text"
+        android:gravity="center"
+        />
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/download_progress_bar"
+        android:layout_below="@id/downloadHintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+
+</RelativeLayout>

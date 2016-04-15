@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+
+    <color name="yellow">#FFFF00</color><!--黄色 -->
+    <color name="gray">#91918e</color>
+
+    <color name="w_gray">#bcbcbb</color>
+    <color name="w_write">#ffffff</color>
+
+
+    <color name="little_blue">#6d7bc7</color>
+    <color name="little_blue_pressed">#031ec2</color>
+
+    <color name="id_blue">#03c2bf</color>
+    <color name="little_gray">#efeeee</color>
+
+    <color name="red">#ff4059</color>
+
+    <color name="orange">#f19707</color>
+
+    <color name="black">#0a0a0a</color>
+</resources>

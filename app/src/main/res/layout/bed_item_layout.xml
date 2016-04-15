@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/patientPhotoImg"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:background="@drawable/rect_edit_bg"
+            android:scaleType="fitXY"
+            android:src="@mipmap/patient_photo"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/id_blue"
+                android:text="@string/bed_info_bedid"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/bedIdText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:text="@string/bed_info_bedid_test"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textSize="17sp"
+                android:singleLine="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/id_blue"
+                android:text="@string/bed_info_bedstate"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingRight="10dp"
+                />
+            <TextView
+                android:id="@+id/bedStateText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/red"
+                android:text="@string/bed_info_bedstate_test"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/id_blue"
+                android:text="@string/bed_info_patientname"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/patientNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:text="@string/bed_info_patientname_test"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textSize="17sp"
+                android:singleLine="true"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/id_blue"
+                android:text="@string/bed_info_patientage"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+            <TextView
+                android:id="@+id/patientAgeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/bed_info_patientage_test"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/id_blue"
+                android:text="@string/bed_ingo_patientgender"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                >
+                <ImageView
+                    android:id="@+id/patientGenderImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/femal_icon"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/id_blue"
+                android:text="@string/bed_info_patientid"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/patientIdText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:text="@string/bed_info_patientid_test"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/id_blue"
+                android:text="@string/bed_info_patient_record"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/patientRecordText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:text="@string/bed_info_patient_record_test"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/id_blue"
+                android:text="@string/bed_info_lasttemper"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/lastTemperText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/orange"
+                android:text="@string/bed_info_lasttemper_test"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

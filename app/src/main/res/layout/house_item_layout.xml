@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/houseIdTextHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/houseid_txt_head"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/id_blue"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/houseIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/houseid_txt"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/houseIdTextHeader"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/houseRemainNumHead"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/houseIdText"
+        android:text="@string/house_remain_num_head"
+        android:layout_alignLeft="@id/houseIdTextHeader"
+        android:gravity="center_vertical"
+        android:textColor="@color/id_blue"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/houseRemainNum"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/houseIdText"
+        android:layout_toRightOf="@id/houseRemainNumHead"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        android:text="@string/house_remain_num"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        />
+
+    <ProgressBar
+        android:id="@+id/houseIcfoPrBar"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:progress="30"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/house_progressbar_color"
+        android:layout_toRightOf="@id/houseIdText"
+        android:paddingLeft="100dp"
+        android:paddingRight="45dp"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

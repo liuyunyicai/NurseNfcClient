@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\AS_data\NurseNfcClient\app\build\intermediates\exploded-aar\NurseNfcClient\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7c3ddea8eda66805d8b82ee39758050c52a4a893">
+        <dex dex="F:\AS_data\NurseNfcClient\app\build\intermediates\pre-dexed\debug\classes-240331dc3362a9c9a0425a623153a1b146149568.jar" />
+    </item>
+
+</items>

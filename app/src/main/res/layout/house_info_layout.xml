@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jazzy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <hust.nursenfcclient.house.PullToRefreshAnimationListView
+        android:id="@+id/houseInfoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:smoothScrollbar="true"
+        jazzy:ptrDrawable="@android:color/white"
+        jazzy:ptrHeaderTextColor="@color/little_gray"
+        jazzy:effect="fly"
+        />
+
+    <RelativeLayout
+        android:id="@+id/headView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/taskRemainView"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+            <ImageView
+                android:id="@+id/taskRemainPhoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_bg"
+                android:scaleType="fitXY"
+                android:src="@mipmap/nurse_photo"
+                android:padding="7dp"
+                android:layout_centerVertical="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_toRightOf="@id/taskRemainPhoto"
+                android:layout_marginLeft="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/taskRemainText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_remain_txt"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/taskRemainProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:progress="30"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:progressDrawable="@drawable/house_progressbar_color"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/houseHeadText"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/house_head_txt"
+            android:layout_below="@id/taskRemainView"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
